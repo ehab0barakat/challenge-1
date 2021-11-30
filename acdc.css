@@ -1,0 +1,54 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+div{display: grid; 
+background: white;
+color: black;
+overflow: hidden;
+padding: 20px;
+text-transform: capitalize;
+ }
+
+
+
+.father{ grid-template: repeat(7,auto)/repeat(4, auto);
+        background: #eee;
+        gap: 20px;
+      
+}
+
+
+
+
+.father div{border-bottom:5px solid red ;
+    
+            justify-content: flex-start;
+            align-content: flex-start;
+            row-gap: 15px;
+            
+
+}
+
+
+h1{font-size: 45px; font-weight: bold;display: block;}
+h6{font-size: 35px; display: block;color: #00000061 }
+span{font-weight: bold; display: block; font-size: 25px;}
+p{font-size: 25px;display: flex; justify-content: flex-end; align-items:flex-end ;}
+
+.one{grid-area: 1/1/3/3;}
+.two{grid-area: 1/3/3/4}
+.three{grid-area: 1/4/7/5 ; background: #231919; color: white;}
+.three h6{color:#ffffffab ;}
+.four{grid-area: 3/1/7/2}
+.five{grid-area: 3/2/5/4;background: #231919; color: white;}
+.five h6{color:#ffffffab ;}
+.six{grid-area: 5/2/7/4}
+.seven{grid-area: 7/1/8/2}
+.eight{grid-area: 7/2/8/3;background: #231919; color: white;}
+.eight h6{color:#ffffffab ;}
+.nine{grid-area: 7/3/8/4}
+.ten{grid-area: 7/4/8/5}
+
+
+
+i{font-size: 30px ;  align-self: flex-end; display: flex; position: absolute; justify-self: right;}
